@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-node-ts",
+  "version": "0.0.1",
+  "description": "Proyecto node con Typescript",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/server.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "node dist/server.js"
+  },
+  "author": "Federico Vazquez",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.13.9",
+    "prisma": "^6.4.1",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "typescript": "^5.8.2"
+  }
+}
